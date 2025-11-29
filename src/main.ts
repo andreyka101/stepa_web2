@@ -130,7 +130,3 @@ console.log(confirm("yes ?"));
 
 
 
-
-
-
-
