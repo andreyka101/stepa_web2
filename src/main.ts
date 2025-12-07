@@ -1,7 +1,39 @@
 // import './style.css'
 
 
+
+
+
+// вывод данных
 console.log("hello");
+
+
+
+// typeof - возвращает тип данных
+
+// number
+console.log(typeof(0));
+// string
+console.log(typeof("stt"));
+// boolean
+console.log(typeof(true));
+// object
+console.log(typeof(Math));
+// function
+console.log(typeof(alert));
+// null - пустота
+let num_none1 = null
+console.log(num_none1);
+// undefined - переменная созданая пустой
+let num_none2
+console.log(num_none2);
+// Infinity - ошибка вычисления чисел
+let num_none3 = 2/0
+console.log(num_none3);
+// NaN - ошибка вычисления разных тип данных
+let num_none4 = "text" - 6
+console.log(num_none4);
+
 
 
 // let num = 0
@@ -19,28 +51,6 @@ console.log(num);
 // alert('text')
 // alert('text2')
 // alert('text3')
-
-
-
-
-// console.log(typeof(0));
-// console.log(typeof("stt"));
-// console.log(typeof(true));
-// console.log(Symbol("56"));
-// console.log(typeof(Symbol("56")));
-// console.log(typeof(Math));
-// console.log(typeof(alert));
-// let num_none1 = null
-// console.log(num_none1);
-
-// let num_none2
-// console.log(num_none2);
-
-// let num_none3 = 2/0
-// console.log(num_none3);
-
-// let num_none4 = "text" - 6
-// console.log(num_none4);
 
 
 
@@ -116,13 +126,13 @@ console.log(num);
 
 
 
-console.log(prompt("num ?"));
-let num_prompt = prompt("num ?" , "69")
-console.log(num_prompt);
+// console.log(prompt("num ?"));
+// let num_prompt = prompt("num ?" , "69")
+// console.log(num_prompt);
 
 
 
-console.log(confirm("yes ?"));
+// console.log(confirm("yes ?"));
 
 
 
