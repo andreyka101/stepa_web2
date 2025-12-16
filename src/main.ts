@@ -36,25 +36,40 @@ console.log(num_none4);
 
 
 
+// обявление переменной
 // let num = 0
+// обявление пустой переменной
 // let num 
+// обявление пустой переменной с типом
 let num: number
+// меня переменую
 num = 50
+// переменую с типом number нельзя менять на string
 // num = "ty"
 console.log(num);
 
+// константу менять нельзя
 // const num_const = 5
 // num_const = 10
 console.log(num);
 
 
+
+// сообшение
 // alert('text')
 // alert('text2')
 // alert('text3')
 
+// сообщение prompt возвращает текст или None
+// let prom_num = prompt("num ?" , "6")
+// console.log(prom_num);
+
+// сообщение confirm возвращает boolean
+// console.log(confirm("да / нет   ?"));
 
 
 
+// условие
 // let num_if = 4
 // if(num_if == 5){
 //     console.log("ok1");
@@ -67,10 +82,11 @@ console.log(num);
 // }
 
 
-
-
-
+// any - любой тип
 // let num_if2:any = 4
+// неточное сравнение
+// if(num_if2 == "4"){
+// точное сравнение
 // if(num_if2 === "4"){
 //     console.log("ok1");
 // }
@@ -79,9 +95,7 @@ console.log(num);
 // }
 
 
-
-
-
+// || - or
 // let num_if3:any = 5
 // if(num_if3 == 3 || num_if3 < 10){
 //     console.log("ok1");
@@ -92,7 +106,7 @@ console.log(num);
 
 
 
-
+// && - and
 // let num_if4:any = 5
 // if(num_if4 == 3 && num_if4 < 10){
 //     console.log("ok1");
@@ -102,8 +116,7 @@ console.log(num);
 // }
 
 
-
-
+// ! - not
 // let num_if5:any = 5
 // if(!(num_if5 == 3)){
 //     console.log("ok1");
@@ -114,7 +127,7 @@ console.log(num);
 
 
 
-
+// 
 // +
 // -
 // /
@@ -122,17 +135,6 @@ console.log(num);
 // **
 // %
 
-
-
-
-
-// console.log(prompt("num ?"));
-// let num_prompt = prompt("num ?" , "69")
-// console.log(num_prompt);
-
-
-
-// console.log(confirm("yes ?"));
 
 
 
