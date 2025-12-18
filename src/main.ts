@@ -24,27 +24,27 @@ console.log(typeof (alert));
 // null - пустота
 let num_none1 = null
 console.log(num_none1);
-// undefined - переменная созданая пустой
+// undefined - переменная созданная пустой
 let num_none2
 console.log(num_none2);
 // Infinity - ошибка вычисления чисел
 let num_none3 = 2 / 0
 console.log(num_none3);
 // NaN - ошибка вычисления разных тип данных
-let num_none4 = "text" - 6
-console.log(num_none4);
+// let num_none4 = "text" - 6
+// console.log(num_none4);
 
 
 
-// обявление переменной
+// объявление переменной
 // let num = 0
-// обявление пустой переменной
+// объявление пустой переменной
 // let num 
-// обявление пустой переменной с типом
+// объявление пустой переменной с типом
 let num: number
-// меня переменую
+// меняем переменную
 num = 50
-// переменую с типом number нельзя менять на string
+// переменную с типом number нельзя менять на string
 // num = "ty"
 console.log(num);
 
@@ -127,7 +127,7 @@ console.log(num);
 
 
 
-// 
+//  арифметические вычисления
 // +
 // -
 // /
@@ -139,21 +139,25 @@ console.log(num);
 
 
 console.log(num);
+// создание массива с числами
 let arr = [1, 2, 3, 4, 5, 3] as Array<Number>
+// создание массива с разными значениями
 let arr_2 = ["q1", "w2", "e3", 2] as Array<any>
 console.log(arr);
 console.log(arr_2);
 
 
-
+// for(начало; условие; шаг)
 // for(let i=0; i<=20; i+=1){
 //     console.log(i);
 // }
-// console.log("------------------------");
+console.log("------------------------");
+
 // for(; num<=60; num++){
 //     console.log(num);
 // }
 
+// необязательно писать начало и шаг
 // for(;num<55;){
 //     console.log(num);
 //     if(confirm("go?")){
@@ -164,20 +168,20 @@ console.log(arr_2);
 //     }
 // }
 
+// перебор массива по индексу
+for (let i in arr_2){
+    console.log(i);
+}
 
-// for (let i in arr_2){
-//     console.log(i);
-// }
+// перебор массива по элементам
+for (let i of arr_2){
+    console.log(i);
+}
 
-// for (let i of arr_2){
-//     console.log(i);
-// }
-
-// let a = 20
+// цикл может работать с несколькими переменными
 // for(let i = 0,a=20; i != a; i++ , a--){
 //     console.log(i,a);
 // }
-
 
 
 
@@ -189,6 +193,7 @@ console.log(arr_2);
 
 
 
+// do while - делает минимум один оборот цикла , даже если в условии false
 // console.log("while start");
 // let num_3 = 10
 // do{
@@ -199,18 +204,30 @@ console.log(arr_2);
 
 
 
+// вызов функции
 // fun1(true, 40)
 // console.log(typeof(fun1))
 // console.log(fun1)
-console.log(fun1(3, 40))
+// console.log(fun1(3, 40))
 
 
 
-function fun1( a:any, b:number,s="text"){
-    console.log("i fun1");
-    console.log(a,b,s);
+// создание функции
+// function fun1( a:any, b:number,s="text"){
+//     console.log("i fun1");
+//     console.log(a,b,s);
     
-    // return 4
-    return (a + b) as number
-}
+//     // return 4
+// можно указать тип возврата функции
+//     return (a + b) as number
+// }
 
+200
+100
+80,97
+
+59,40
+79,98
+57,79
+
+2357
