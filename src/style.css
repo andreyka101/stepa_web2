@@ -1,3 +1,14 @@
 body{
   background-color: rgb(255, 145, 145);
 }
+span{
+  display: inline-block;
+  background-color: aqua;
+  color: black;
+  padding: 20px;
+}
+div{
+  background-color: brown;
+  color: rgb(255, 185, 185);
+  padding: 10px;
+}
