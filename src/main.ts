@@ -234,7 +234,7 @@ console.log("------------------------");
 // console.log(num_fun)
 // num_fun = function(){
 //     console.log("hi num fun");
-    
+
 // }
 // num_fun()
 
@@ -245,7 +245,7 @@ console.log("------------------------");
 
 
 
-let fun4 = (num_a = 2)=>{
+let fun4 = (num_a = 2) => {
     num_a *= 5
     console.log(num_a);
 }
@@ -253,7 +253,7 @@ fun4(3);
 
 
 
-(()=>{
+(() => {
     console.log("text 0");
 })()
 
@@ -261,14 +261,138 @@ fun4(3);
 
 
 // const span_el = document.querySelector("span") as HTMLElement
-// const span_el = document.querySelector("#aq") as HTMLSpanElement
-const span_el = document.querySelector("span") as HTMLSpanElement
+const span_el = document.querySelector("#aq") as HTMLSpanElement
+// const span_el = document.querySelector("span") as HTMLSpanElement
 console.log(span_el);
 // span_el.innerText = "text"
 // span_el.innerText = "<div>text</div>"
 // span_el.innerHTML = "text"
-// span_el.innerHTML = "<div>text</div>"
+span_el.innerHTML = "<div>text</div>"
 
+
+
+const click_but = document.querySelector('.click_but') as HTMLButtonElement
+// function fun_click_but(){
+//     alert("+-+")
+// }
+// click_but.addEventListener("click" , fun_click_but)
+
+
+click_but.addEventListener("click", () => {
+    span_el.innerHTML = "<div>text</div>"
+})
+
+
+
+
+// let a_num1 = 3;
+// (() => {
+//     a_num1 = 5
+//     console.log(a_num1);
+
+// })();
+// console.log(a_num1);
+
+
+
+// let a_num1 = 3;
+// if (true) {
+//     a_num1 = 5
+//     console.log(a_num1);
+
+// }
+// console.log(a_num1);
+
+
+
+
+
+
+// (() => {
+//     let a_num1 = 5
+//     console.log(a_num1);
+// })();
+// console.log(a_num1);
+
+
+
+// if (true) {
+//     let a_num1 = 5
+//     console.log(a_num1);
+// }
+// console.log(a_num1);
+
+
+
+
+
+
+//     (() => {
+//         var a_num1 = 5
+//         console.log(a_num1);
+//     })();
+// console.log(a_num1);
+
+
+
+if (true) {
+    var a_num1 = 5
+    console.log(a_num1);
+}
+console.log(a_num1);
+
+
+let str1 = '23744'
+str1 = "23744"
+str1 = "237\n4 \\ 4"
+str1 = '<span id="aq">i t123<img src="" alt=""></span>'
+str1 = `
+<span id="aq">
+i t123
+<img src="" alt="">
+</span>
+`
+str1 = 'twfdqREDygd9qwdREDg9dwgfREDefffjjs'
+console.log(str1);
+console.log(str1.indexOf("red"));
+console.log(str1.indexOf("RED"));
+console.log(str1.indexOf("RED", 6));
+
+
+
+console.log(str1.toUpperCase());
+console.log(str1.toLowerCase());
+
+
+
+console.log(str1.includes('red'));
+console.log(str1.includes('RED'));
+
+
+
+console.log(str1.slice(5));
+console.log(str1.slice(5, 8));
+
+
+
+console.log(str1.split("R"));
+console.log(str1.split(""));
+
+
+
+let str2 = 'wddw' + "4455" + true + 55
+console.log(str2);
+console.log(typeof(str2));
+
+
+str2 = '' + 55
+console.log(str2);
+console.log(typeof(str2));
+
+
+str2 = String(false)
+console.log(str2);
+console.log(typeof(str2));
 
 
 
