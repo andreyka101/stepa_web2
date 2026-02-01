@@ -230,22 +230,24 @@ console.log("------------------------");
 
 
 
+// создание функции и перезапись переменной
 // let num_fun = 50 as Number | Function
 // console.log(num_fun)
 // num_fun = function(){
 //     console.log("hi num fun");
-
+    
 // }
 // num_fun()
 
 
 
+// создание стрелочной функции с одной строкой
 // const fun3 = ()=> alert("ererer")
 // fun3()
 
 
 
-let fun4 = (num_a = 2) => {
+let fun4 = (num_a = 2)=>{
     num_a *= 5
     console.log(num_a);
 }
@@ -253,19 +255,21 @@ fun4(3);
 
 
 
-(() => {
+(()=>{
     console.log("text 0");
 })()
 
 
 
-
+// с помошью document.querySelector достаём элемент HTML по (тегу, классу, ID)
 // const span_el = document.querySelector("span") as HTMLElement
 const span_el = document.querySelector("#aq") as HTMLSpanElement
 // const span_el = document.querySelector("span") as HTMLSpanElement
 console.log(span_el);
+// innerText - вставляет текст в элемент HTML
 // span_el.innerText = "text"
 // span_el.innerText = "<div>text</div>"
+// innerText - вставляет HTML в элемент HTML
 // span_el.innerHTML = "text"
 span_el.innerHTML = "<div>text</div>"
 
