@@ -235,7 +235,7 @@ console.log("------------------------");
 // console.log(num_fun)
 // num_fun = function(){
 //     console.log("hi num fun");
-    
+
 // }
 // num_fun()
 
@@ -247,7 +247,7 @@ console.log("------------------------");
 
 
 
-let fun4 = (num_a = 2)=>{
+let fun4 = (num_a = 2) => {
     num_a *= 5
     console.log(num_a);
 }
@@ -255,7 +255,7 @@ fun4(3);
 
 
 
-(()=>{
+(() => {
     console.log("text 0");
 })()
 
@@ -386,17 +386,130 @@ console.log(str1.split(""));
 
 let str2 = 'wddw' + "4455" + true + 55
 console.log(str2);
-console.log(typeof(str2));
+console.log(typeof (str2));
 
 
 str2 = '' + 55
 console.log(str2);
-console.log(typeof(str2));
+console.log(typeof (str2));
 
 
 str2 = String(false)
 console.log(str2);
-console.log(typeof(str2));
+console.log(typeof (str2));
+
+
+
+
+let arr = [1, 2, 3, 4, 6, 78, 3, 2] as Array<Number | String>
+let arr_x2 = [
+    [1, 2, 3],
+    [1, 2, 3],
+    [1, 2, 3],
+] as Array<Array<Number>>
+
+console.log(arr);
+// console.log(arr_x2);
+
+// arr.push(2)
+arr.push(2, 56)
+// arr_x2.push([2, 56])
+
+console.log(arr);
+// console.log(arr_x2);
+
+
+
+arr.pop()
+// arr.pop()
+// arr.pop()
+// arr.pop()
+console.log(arr);
+
+
+
+arr.shift()
+console.log(arr);
+
+
+
+console.log(arr.unshift(7))
+console.log(arr);
+
+
+
+// arr.splice(3)
+// arr.splice(3, 2)
+// arr.splice(-2, 2)
+console.log(arr);
+
+
+
+console.log(arr.concat([1, 3, 45, 7, 'gbbb'], 55454))
+
+
+
+// console.log(arr.indexOf(70))
+// console.log(arr.indexOf(78))
+console.log(arr.indexOf(3))
+console.log(arr.indexOf(3, 4))
+console.log(arr.lastIndexOf(3))
+
+
+
+console.log(arr.includes(34))
+
+
+
+let arr2 = [7, 4, 23, 76, 9, 3, 45, 2, 1, 105,]
+// arr2.sort()
+arr2.sort((a: number, b: number) => {
+    if (a > b) {
+        return 1
+    }
+    if (a == b) return 0
+    if (a < b) {
+        return -1
+    }
+})
+console.log(arr2);
+
+arr2.reverse()
+
+console.log(arr2);
+
+
+
+// arr.forEach((item, index, array) => {
+//     console.log(item, index, array)
+// })
+
+
+
+console.log(arr.find((item, index, array) => {
+    console.log(item, index, array)
+    // return item == 4 
+    return index == 4
+}))
+console.log(arr.find((item, index) => index == 4))
+
+
+
+console.log(arr.filter((item, index, array) => {
+    console.log(item, index, array)
+    // return item == 2
+    return index > 4
+}))
+
+
+
+
+
+
+
+
+
+
 
 
 
