@@ -358,42 +358,42 @@ i t123
 `
 str1 = 'twfdqREDygd9qwdREDg9dwgfREDefffjjs'
 console.log(str1);
+// indexOf - ищет первое вхождение подстроки в строке, возвращает индекс или -1
 console.log(str1.indexOf("red"));
 console.log(str1.indexOf("RED"));
 console.log(str1.indexOf("RED", 6));
 
 
-
+// toUpperCase / toLowerCase - меняет регистр строки
 console.log(str1.toUpperCase());
 console.log(str1.toLowerCase());
 
 
-
+// includes - проверяет есть ли подстрока в строке, возвращает true или false
 console.log(str1.includes('red'));
 console.log(str1.includes('RED'));
 
 
-
+// slice - обрезает строку от индекса до индекса
 console.log(str1.slice(5));
 console.log(str1.slice(5, 8));
 
 
-
+// split - разбивает строку в массив по разделителю
 console.log(str1.split("R"));
 console.log(str1.split(""));
-
 
 
 let str2 = 'wddw' + "4455" + true + 55
 console.log(str2);
 console.log(typeof (str2));
 
-
+// преобразование в строку через конкатенацию
 str2 = '' + 55
 console.log(str2);
 console.log(typeof (str2));
 
-
+// преобразование в строку через функцию String
 str2 = String(false)
 console.log(str2);
 console.log(typeof (str2));
@@ -411,6 +411,7 @@ let arr_x2 = [
 console.log(arr);
 // console.log(arr_x2);
 
+// push - добавляет элементы в конец массива
 // arr.push(2)
 arr.push(2, 56)
 // arr_x2.push([2, 56])
@@ -418,50 +419,44 @@ arr.push(2, 56)
 console.log(arr);
 // console.log(arr_x2);
 
-
-
+// pop - удаляет последний элемент массива и возвращает его
 arr.pop()
 // arr.pop()
 // arr.pop()
 // arr.pop()
 console.log(arr);
 
-
-
+// shift - удаляет первый элемент массива и возвращает его
 arr.shift()
 console.log(arr);
 
-
-
+// unshift - добавляет элементы в начало массива
 console.log(arr.unshift(7))
 console.log(arr);
 
-
-
+// splice - удаляет/добавляет элементы в массив
 // arr.splice(3)
 // arr.splice(3, 2)
 // arr.splice(-2, 2)
 console.log(arr);
 
-
-
+// concat - объединяет массивы, возвращает новый массив
 console.log(arr.concat([1, 3, 45, 7, 'gbbb'], 55454))
 
 
-
+// indexOf / lastIndexOf - ищет индекс элемента в массиве
 // console.log(arr.indexOf(70))
 // console.log(arr.indexOf(78))
 console.log(arr.indexOf(3))
 console.log(arr.indexOf(3, 4))
 console.log(arr.lastIndexOf(3))
 
-
-
+// includes - проверяет есть ли элемент в массиве
 console.log(arr.includes(34))
 
 
-
 let arr2 = [7, 4, 23, 76, 9, 3, 45, 2, 1, 105,]
+// sort - сортирует массив
 // arr2.sort()
 arr2.sort((a: number, b: number) => {
     if (a > b) {
@@ -474,18 +469,18 @@ arr2.sort((a: number, b: number) => {
 })
 console.log(arr2);
 
+// reverse - переворачивает массив (меняет порядок элементов на обратный)
 arr2.reverse()
 
 console.log(arr2);
 
 
-
+// forEach - выполняет функцию для каждого элемента массива
 // arr.forEach((item, index, array) => {
 //     console.log(item, index, array)
 // })
 
-
-
+// find - ищет первый элемент удовлетворяющий условию
 console.log(arr.find((item, index, array) => {
     console.log(item, index, array)
     // return item == 4 
@@ -493,20 +488,12 @@ console.log(arr.find((item, index, array) => {
 }))
 console.log(arr.find((item, index) => index == 4))
 
-
-
+// filter - создаёт новый массив с элементами удовлетворяющими условию
 console.log(arr.filter((item, index, array) => {
     console.log(item, index, array)
     // return item == 2
     return index > 4
 }))
-
-
-
-
-
-
-
 
 
 
